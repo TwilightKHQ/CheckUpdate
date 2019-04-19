@@ -11,9 +11,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
-import java.util.List;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -74,11 +71,14 @@ public class MainActivity extends AppCompatActivity {
         }).start();
     }
 
+    //解析Json数据
     private void parseJSONWithGSON(String jsonData) {
         Gson gson = new Gson();
         UpdateBean updateBean = gson.fromJson(jsonData, UpdateBean.class);
+        //验证Json解析是否正确
         Log.d("MainActivity", "VersionCode is " + updateBean.getVersionCode());
         Log.d("MainActivity", "VersionName is " + updateBean.getVersionName());
         Log.d("MainActivity", "DownloadUrl is " + updateBean.getDownloadUrl());
+
     }
 }
