@@ -1,14 +1,14 @@
-package com.example.zhongzhiqiang.checkupdate;
+package com.example.zhongzhiqiang.checkupdate.Utils;
 
 /**
- * Created by zhongzhiqiang on 19-4-16.
+ * Created by TwilightKHQ on 19-4-16.
  */
 
 public class UpdateBean {
     /**
      * versionCode : 2
      * versionName : 1.0.2
-     * url : https://github.com/TwilightKHQ/MyPlayAndroid/releases/download/1.0/app-release.apk
+     * downloadUrl : https://github.com/TwilightKHQ/MyPlayAndroid/releases/download/1.0/app-release.apk
      */
     private int versionCode;
     private String versionName;
