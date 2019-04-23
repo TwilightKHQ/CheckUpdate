@@ -43,6 +43,7 @@ public class DownloadService extends Service {
             Toast.makeText(DownloadService.this, "下载完成", Toast.LENGTH_SHORT).show();
             String fileName = downloadUrl.substring(downloadUrl.lastIndexOf("/"));
             String directory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();
+            //下载完成后执行安装程序
             install(directory + fileName);
         }
 

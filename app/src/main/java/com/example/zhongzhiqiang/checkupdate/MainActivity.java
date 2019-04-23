@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 sendRequestWithOkHttp(getString(R.string.update_info));
-                Toast.makeText(MainActivity.this, "Clicked", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity.this, "Clicked", Toast.LENGTH_SHORT).show();
             }
         });
 
