@@ -181,7 +181,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void StartDownload(String downloadUrl) {
         downloadBinder.startDownload(downloadUrl);
-    }
+   }
+
+//    private DownloadListener listener = new
 
     @Override
     protected void onDestroy() {
