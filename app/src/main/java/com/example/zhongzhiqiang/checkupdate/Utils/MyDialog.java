@@ -37,6 +37,7 @@ public class MyDialog extends Dialog {
         WindowManager windowManager = ((Activity) context).getWindowManager();
         Display display = windowManager.getDefaultDisplay();
         WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
+
         layoutParams.width = display.getWidth()*4/5;// 设置dialog宽度为屏幕的4/5
         getWindow().setAttributes(layoutParams);
         setCanceledOnTouchOutside(false);//点击外部 Dialog不消失
